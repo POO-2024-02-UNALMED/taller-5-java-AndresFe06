@@ -37,12 +37,10 @@ public class Animal {
         return ("Mi nombre es "+ this.nombre+", tengo una edad de "+ 
         this.edad +", habito en "+ this.habitat+  ", y mi genero es "+ this.genero+
         ", la zona en la que me ubico es "+ this.zona + ", del zoologico "+ this.zona.zoo);  
-    }
-}
-    public String movmiento(){
-        return "desplazarse"; 
-    }
-    
+    }}
+   
+   
+
     public static int getTotalAnimales() {
         return totalAnimales;
     }
@@ -78,5 +76,8 @@ public class Animal {
     }
     public void setZona(Zona zona) {
         this.zona = zona;
+    }
+    public String movimiento(){
+        return "desplazarse";
     }
 }

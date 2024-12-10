@@ -10,20 +10,16 @@ public class Ave extends Animal {
     public static  int aguilas;
     private String colorPlumas;
 
-    // Constructor vacío
     public Ave() {listado.add(this); }
     
 
-    // Constructor con parámetros
     public Ave(String nombre,int edad, String habitat, String genero,
                String colorPlumas) {
         super(nombre,edad, habitat, genero);
         this.colorPlumas = colorPlumas;
         listado.add(this); 
     }
-    public String movimiento(){
-        return "volar"; 
-    }
+    
     public static Ave crearHalcon(String nombre, int edad, String genero){
         Ave halcon=new Ave(nombre,edad, "montañas", genero, "café glorioso"); 
         Ave.halcones++; 
@@ -77,5 +73,8 @@ public class Ave extends Animal {
 
     public void setColorPlumas(String colorPlumas) {
         this.colorPlumas = colorPlumas;
+    }
+    public String movimiento(){
+        return "volar"; 
     }
 }

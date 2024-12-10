@@ -31,9 +31,7 @@ public class Reptil extends Animal {
         Reptil.serpientes++; 
         return serpiente;
     }
-    public String movimiento(){
-        return "reptar"; 
-    }
+   
     static int cantidadReptiles(){
         return listado.size(); 
     }
@@ -78,4 +76,8 @@ public class Reptil extends Animal {
         this.largoCola = largoCola;
         System.out.println();
     }
+    public String movimiento(){
+        return "reptar"; 
+
+    } 
 }

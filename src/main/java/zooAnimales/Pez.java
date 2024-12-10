@@ -40,9 +40,7 @@ public class Pez extends Animal {
     public static int cantidadPeces() {
         return listado.size(); 
     }
-    public String movimiento(){
-        return "nadar"; 
-    }
+   
 
     public static ArrayList<Pez> getListado() {
         return listado;
@@ -82,5 +80,8 @@ public class Pez extends Animal {
 
     public void setCantidadAletas(int cantidadAletas) {
         this.cantidadAletas = cantidadAletas;
+    }
+    public String movimiento(){
+        return "nadar";
     }
 }
