@@ -11,12 +11,10 @@ public class Pez extends Animal {
     private String colorEscamas; 
     private int cantidadAletas;
 
-    // Constructor vacío
     public Pez() {        listado.add(this);
 
     }
     
-    // Constructor con parámetros
     public Pez(String nombre,int edad, String habitat, String genero, String colorEscamas,
                int cantidadAletas) {
         super(nombre,edad, habitat, genero);
@@ -30,7 +28,6 @@ public class Pez extends Animal {
         return salmon;
     }
 
-    // Método para crear un bacalao
     public static Pez crearBacalao(String nombre, int edad, String genero) {
         Pez bacalao = new Pez(nombre, edad, "océano", genero, "gris", 6);
         bacalaos++; 

@@ -9,9 +9,7 @@ public class Mamifero extends Animal {
     public static int leones; 
     private Boolean pelaje;
     private int patas; 
-     // Constructor vacío
     public Mamifero() {listado.add(this);}
-    // Constructor con parámetros
     public Mamifero(String nombre, int edad, String habitat, String genero,
                     Boolean pelaje, int patas) {
         super(nombre,edad, habitat, genero);
