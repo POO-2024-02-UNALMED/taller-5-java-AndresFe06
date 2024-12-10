@@ -20,11 +20,7 @@ public class Animal {
      
     }
     public static String totalPorTipo() {
-        return "Mamíferos: " + Mamifero.cantidadMamiferos() + "\n" +
-               "Aves: " + Ave.cantidadAves() + "\n" +
-               "Reptiles: " + Reptil.cantidadReptiles() + "\n" +
-               "Peces: " + Pez.cantidadPeces() + "\n" +
-               "Anfibios: " + Anfibio.cantidadAnfibios();
+       return ("Mamiferos: "+Mamifero.cantidadMamiferos()+"\nAves: "+Ave.cantidadAves()+"\nReptiles: "+Reptil.cantidadReptiles()+"\nPeces: "+Pez.cantidadPeces()+"\nAnfibios: "+Anfibio.cantidadAnfibios());
     }
     @Override
     public String toString(){
