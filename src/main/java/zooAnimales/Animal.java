@@ -9,15 +9,14 @@ public class Animal {
     private String habitat; 
     private String genero; 
     private Zona zona;  
-    {
-        totalAnimales++; 
-    }
-    public Animal(){}
+    
+    public Animal(){totalAnimales++;}
     public Animal(String n, int e, String h,String g){
         this.nombre=n; 
         this.edad=e; 
         this.habitat=h; 
         this.genero=g; 
+        totalAnimales++;
      
     }
     public static String totalPorTipo() {
@@ -27,19 +26,14 @@ public class Animal {
                "Peces: " + Pez.cantidadPeces() + "\n" +
                "Anfibios: " + Anfibio.cantidadAnfibios();
     }
-
     @Override
     public String toString(){
-        if (this.zona==null){
-        return ("Mi nombre es "+ this.nombre+", tengo una edad de "+ 
-        this.edad +", habito en "+ this.habitat+  ", y mi genero es "+ this.genero);  
-    }else{
-        return ("Mi nombre es "+ this.nombre+", tengo una edad de "+ 
-        this.edad +", habito en "+ this.habitat+  ", y mi genero es "+ this.genero+
-        ", la zona en la que me ubico es "+ this.zona + ", del zoologico "+ this.zona.zoo);  
-    }}
-   
-   
+        if (zona==null) {
+        return "Mi nombre es " +nombre+  ", tengo una edad de " +edad+ ", habito en " +habitat+ " y mi genero es " +genero;
+        } else{
+        return "Mi nombre es " +nombre+  ", tengo una edad de " +edad+ ", habito en " +habitat+ " y mi genero es " +genero+ ", la zona en la que me ubico es " +zona+ ", en el " +zona.getZoo();
+        }
+    }
 
     public static int getTotalAnimales() {
         return totalAnimales;
